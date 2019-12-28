@@ -1,1 +1,1 @@
-web: gunicorn heart_rage.wsgi --log-file -
+web: gunicorn heart_rate.wsgi --log-file -
