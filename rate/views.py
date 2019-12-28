@@ -8,7 +8,6 @@ def rate_create_view(request):
     if request.POST:
         if form.is_valid():
             age = form.cleaned_data['age']
-            form.save()
             low_rate = 1
             high_rate = 2
             context = {
