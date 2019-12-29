@@ -7,9 +7,11 @@
         {% endblock %}
     </head>
     <body>
-        <div class="jumbotron" >
-            <h1 class="display-4" > HIIT Heart Rate Calculator </h1>
-            <p class="lead" > A very simple app to determine your target rates for HIIT training. </p>
+        {% load static %}
+        <link rel="stylesheet" type="text/css"  href="{% static 'rate/style.css' %}">
+        <div class="jumbotron" style="background-image">
+            <h1 class="display-4 text-white" > HIIT Heart Rate Calculator </h1>
+            <p class="lead text-white" > A very simple app to determine your target rates for HIIT training. </p>
         </div>
         {% block content %}
         Base content
