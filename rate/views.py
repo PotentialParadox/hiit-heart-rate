@@ -22,7 +22,7 @@ def rate_create_view(request):
         return render(request, 'rate/rate_create.html', context)
 
 def calc_low_rate(age):
-    return (208-0.7*age)*0.7
+    return "{:.0f} bpm".format((208-0.7*age)*0.7)
 
 def calc_high_rate(age):
-    return (208-0.7*age)*0.85
+    return "{:.0f} bpm".format((208-0.7*age)*0.85)

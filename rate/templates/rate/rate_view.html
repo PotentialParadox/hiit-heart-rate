@@ -1,6 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1> Your Target Rates </h1>
-Low Rate: {{low_rate}}
-High Rate: {{high_rate}}
+<h3> Your Target Rates </h3>
+<ul class="list-group list-group-flush">
+    <li class="list-group-item"> Low Rate: {{low_rate}} </li>
+    <li class="list-group-item"> High Rate: {{high_rate}} </li>
+</ul>
+<p>
+    For HIIT training try to alternate between these two rates. Once your heart
+    rate reaches {{high_rate}} take a short break until it reacher {{low_rate}}.
+</p>
+
 {% endblock %}
